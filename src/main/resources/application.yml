@@ -1,9 +1,17 @@
+server:
+  port: 8083
 spring:
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
+  datasource:
+    url: jdbc:mysql://localhost:3306/currencies
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 rabbit:
   rates-queue-name: rates_queue
+  confirmation-data-queue: data_queue

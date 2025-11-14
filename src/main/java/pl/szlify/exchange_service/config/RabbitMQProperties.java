@@ -10,4 +10,5 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class RabbitMQProperties {
 
     private String ratesQueueName;
+    private String confirmationDataQueue;
 }

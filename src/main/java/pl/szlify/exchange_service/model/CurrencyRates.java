@@ -1,4 +1,4 @@
-package pl.szlify.exchange_service.entity;
+package pl.szlify.exchange_service.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,11 +19,9 @@ import java.math.BigDecimal;
 public class CurrencyRates {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private String code;
 
     private String currency;
-    private String code;
     private BigDecimal bid;
     private BigDecimal ask;
 }

@@ -10,6 +10,7 @@ public class ConvertParams {
 
     @SupportedCurrency
     private String from;
+
     @SupportedCurrency
     private String to;
 
