@@ -7,6 +7,6 @@ import lombok.Data;
 @AllArgsConstructor
 public class ConfirmationDataDto {
 
-    private CurrencyConversionResponseDto result;
+    private CurrencyConversionResponseDto response;
     private String email;
 }
